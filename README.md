@@ -10,7 +10,7 @@ sudo git clone https://github.com/forgecode1337/AES-RSA-Armor.git
 ```
 <b>Change to the Repository Directory:</b>
 ```
-cd AES-RA-Armor
+cd AES-RSA-Armor
 ```
 <b>Make Scripts Executable:</b> Ensure the script files can be executed:
 ```
