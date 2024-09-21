@@ -90,7 +90,7 @@ aes_script decrypt [new_filename] [original_filename] No/mFV0csQgN2f8x9tYwnJmWjo
 
 <div style="border-top: 1px solid #000; margin: 10px 0;"></div>
 
-<h3><b>Summary</b>b></h3>
+### <b>Summary</b>
 <p>You have successfully set up the AES-RSA Armor repository, created aliases for easy access to your scripts, and learned how to encrypt and decrypt files using the provided scripts.
 
 If you encounter any issues, refer to the README in the cloned repository for further details or check the issues tab on GitHub for community support.</p>
@@ -100,6 +100,6 @@ If you encounter any issues, refer to the README in the cloned repository for fu
 If you appreciate my work, consider buying me a coffee! ☕️
 
 <a href="https://buymeacoffee.com/forgecode" target="_blank" style="text-decoration: none; font-size: 24px; font-weight: bold; background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff); background-size: 400%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: rainbow 3s linear infinite;">
-    Buy Me a Coffee
+    ⭐⭐⭐ Buy Me a Coffee ⭐⭐⭐
 </a>
 
