@@ -35,7 +35,6 @@ alias key_script='python3 /home/usr/key_script.py'
     <li>Press <code>Enter</code> to save.</li>
 </ul>
 
-
 Reload the shell configuration file:
 ```
 source ~/.bashrc
@@ -49,6 +48,7 @@ Run the key generation script:
 ```
 key_script
 ```
+### Example:
 Copy the Base64-encoded AES Key and Encrypted AES Key from the output:
 ```
 Base64-encoded AES Key: g51P3EgtoqqFfOAZBYfJgEQUufpRfKJ6+Cw9k2Ytzm8=
