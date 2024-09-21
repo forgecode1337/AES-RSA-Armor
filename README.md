@@ -12,6 +12,7 @@ Change to the repository directory:
 ```
 cd AES-RA-Armor
 ```
+Make sure to give execute permissions to the scripts:
 ```
 sudo chmod +x aes_script.py key_script.py
 ```
