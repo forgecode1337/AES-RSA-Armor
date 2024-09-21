@@ -1,45 +1,45 @@
-### Install and Set Up
-First, make sure your system is up to date and install necessary packages:
+### <b>Install and Set Up</b>
+<b>Update Your System and Install Necessary Packages:</b>
 ```
 sudo apt update
 sudo apt upgrade -y
 ```
-Clone the repository:
+<b>Clone the Repository:</b>
 ```
 sudo git clone https://github.com/forgecode1337/AES-RSA-Armor.git
 ```
-Change to the repository directory:
+<b>Change to the Repository Directory:</b>
 ```
 cd AES-RA-Armor
 ```
-Make sure to give execute permissions to the scripts:
+<b>Make Scripts Executable:</b> Ensure the script files can be executed:
 ```
 sudo chmod +x aes_script.py key_script.py
 ```
-Check your current directory to confirm:
+<b>Check Your Current Directory to Confirm:</b>
 ```
 pwd
 ```
-### Check Which Shell is Set as Default
-Run the following command to check which shell you are using:
+### <b>Check Which Shell is Set as Default</b>
+Run the following command to check your current shell:
 ```
 echo $SHELL
 ```
-### Configure Aliases
-If you are using Bash, edit the <code>.bashrc</code> file located in your home directory:
+### <b>Configure Aliases</b>
+<b>For Bash:</b> Edit the <code>.bashrc</code> file located in your home directory:
 ```
 nano ~/.bashrc
 ```
-If you are using Zsh, edit the <code>.zshrc</code> file:
+<b>For Zsh:</b> Edit the <code>.zshrc</code> file:
 ```
 nano ~/.zshrc
 ```
-Scroll to the end of the file and add the aliases. Replace <code>usr</code> from <code>/home/usr/AES-RSA-Armor</code> with your actual home directory path. For example:
+<b>Add the Aliases:</b> Scroll to the end of the file and add the following lines. Replace <code>usr</code> in <code>/home/usr/AES-RSA-Armor</code> with your actual home directory path:
 ```
 alias aes_script='python3 /home/usr/AES-RSA-Armonr/aes_script.py'
 alias key_script='python3 /home/usr/AES-RSA-Armor/key_script.py'
 ```
-## Save and Exit
+## <b>Save and Exit</b>
 <p>For Nano:</p>
 <ul>
     <li>Press <code>Ctrl + X</code> to exit.</li>
@@ -47,11 +47,12 @@ alias key_script='python3 /home/usr/AES-RSA-Armor/key_script.py'
     <li>Press <code>Enter</code> to save.</li>
 </ul>
 
-Reload the shell configuration file:
+### <b>Reload the shell configuration file:</b>
+For Bash:
 ```
 source ~/.bashrc
 ```
-or for Zsh:
+For Zsh:
 ```
 source ~/.zshrc
 ```
@@ -59,42 +60,42 @@ source ~/.zshrc
 sudo apt update
 sudo apt upgrade -y
 ```
-### Generate Keys
+### <b>Generate Keys</b>
 Run the key generation script:
 ```
 key_script
 ```
-### Example:
+### <b>Example:</b>
 Copy the Base64-encoded AES Key and Encrypted AES Key from the output:
 ```
 Base64-encoded AES Key: g51P3EgtoqqFfOAZBYfJgEQUufpRfKJ6+Cw9k2Ytzm8=
 Base64-encoded Encrypted AES Key: No/mFV0csQgN2f8x9tYwnJmWjowRsUrfk/y0AcxHG4xen6My5O1/51ZZseOhYfhu5Au4SlLKx4T99rCvJrndq009CNwjITjcE9vha9DCrdgwLpJOU5HLj+lRKrhF6/uWAWLJ56LIwQ5Oq1L2DlAHbANVs6Vb2qj84F828pqNHu7AJdIHEwvkhfhPKBEP6HDezD94DrZazqy+UBujJ2mral2Bqld4KvFGNgWwiKDc/FiPjWoEq+Yv48GXPMP5OoofQycT9wEAvCtBfwhlVM+NlXegpsxuihSaBCB3k5Vcth0GD8lf9kazVnvYTxbeD19kAzZ7c/n70XkVnLrL3n/QUg==
 ```
-### Using the Scripts
-#### Encrypt a File
+### <b>Using the Scripts</b>
+#### <b>Encrypt a File</b>
 To encrypt a file, use the <code>aes_script</code> with the Base64-encoded AES Key and Encrypted AES Key you generated:
 ```
 aes_script encrypt [original_filename] [new_filename] --key g51P3EgtoqqFfOAZBYfJgEQUufpRfKJ6+Cw9k2Ytzm8= --delete
 ```
-Replace [original_filename] with the path to the file you want to encrypt.
-Replace [new_filename] with the desired name for the encrypted file.
+<li>Replace <code>[original_filename]</code> with the path to the file you want to encrypt.</li>
+<li>Replace <code>[new_filename]</code> with the desired name for the encrypted file.</li>
 
-#### Decrypt a File
+#### <b>Decrypt a File</b>
 To decrypt the file you just encrypted, use:
 ```
 aes_script decrypt [new_filename] [original_filename] No/mFV0csQgN2f8x9tYwnJmWjowRsUrfk/y0AcxHG4xen6My5O1/51ZZseOhYfhu5Au4SlLKx4T99rCvJrndq009CNwjITjcE9vha9DCrdgwLpJOU5HLj+lRKrhF6/uWAWLJ56LIwQ5Oq1L2DlAHbANVs6Vb2qj84F828pqNHu7AJdIHEwvkhfhPKBEP6HDezD94DrZazqy+UBujJ2mral2Bqld4KvFGNgWwiKDc/FiPjWoEq+Yv48GXPMP5OoofQycT9wEAvCtBfwhlVM+NlXegpsxuihSaBCB3k5Vcth0GD8lf9kazVnvYTxbeD19kAzZ7c/n70XkVnLrL3n/QUg== private.pem --delete
 ```
-Replace [new_filename] with the name of the encrypted file you want to decrypt.
-Replace [original_filename] with the name you want for the decrypted file.
+<li>Replace <code>[new_filename]</code> with the name of the encrypted file you want to decrypt.</li>
+<li>Replace <code>[original_filename]</code> with the name you want for the decrypted file.</li>
 
 <div style="border-top: 1px solid #000; margin: 10px 0;"></div>
 
-<h3>Summary</h3>
-<p>You have successfully set up the AES-RSA Armor repository, created aliases for easy access to your scripts, and learned how to encrypt and decrypt files using the provided scripts.</p>
+<h3><b>Summary</b>b></h3>
+<p>You have successfully set up the AES-RSA Armor repository, created aliases for easy access to your scripts, and learned how to encrypt and decrypt files using the provided scripts.
 
 If you encounter any issues, refer to the README in the cloned repository for further details or check the issues tab on GitHub for community support.</p>
 
-### Support Me
+### <b>Support Me</b>
 
 If you appreciate my work, consider buying me a coffee! ☕️
 
