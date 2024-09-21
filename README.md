@@ -28,11 +28,11 @@ echo $SHELL
 ### <b>Configure Aliases</b>
 <b>For Bash:</b> Edit the <code>.bashrc</code> file located in your home directory:
 ```
-nano ~/.bashrc
+sudo nano ~/.bashrc
 ```
 <b>For Zsh:</b> Edit the <code>.zshrc</code> file:
 ```
-nano ~/.zshrc
+sudo nano ~/.zshrc
 ```
 <b>Add the Aliases:</b> Scroll to the end of the file and add the following lines. Replace <code>usr</code> in <code>/home/usr/AES-RSA-Armor</code> with your actual home directory path:
 ```
