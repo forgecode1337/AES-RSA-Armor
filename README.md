@@ -8,6 +8,17 @@ Clone the repository:
 ```
 sudo git clone https://github.com/forgecode1337/AES-RSA-Armor.git
 ```
+Change to the repository directory:
+```
+cd AES-RA-Armor
+```
+```
+sudo chmod +x aes_script.py key_script.py
+```
+Check your current directory to confirm:
+```
+pwd
+```
 ### Check Which Shell is Set as Default
 Run the following command to check which shell you are using:
 ```
@@ -22,10 +33,10 @@ If you are using Zsh, edit the <code>.zshrc</code> file:
 ```
 nano ~/.zshrc
 ```
-Scroll to the end of the file and add the aliases. Replace <code>/home/usr</code> with your actual home directory path. For example:
+Scroll to the end of the file and add the aliases. Replace <code>usr</code> from <code>/home/usr/AES-RSA-Armor</code> with your actual home directory path. For example:
 ```
-alias aes_script='python3 /home/usr/aes_script.py'
-alias key_script='python3 /home/usr/key_script.py'
+alias aes_script='python3 /home/usr/AES-RSA-Armonr/aes_script.py'
+alias key_script='python3 /home/usr/AES-RSA-Armor/key_script.py'
 ```
 ## Save and Exit
 <p>For Nano:</p>
@@ -42,6 +53,10 @@ source ~/.bashrc
 or for Zsh:
 ```
 source ~/.zshrc
+```
+```
+sudo apt update
+sudo apt upgrade -y
 ```
 ### Generate Keys
 Run the key generation script:
@@ -71,9 +86,18 @@ aes_script decrypt [new_filename] [original_filename] No/mFV0csQgN2f8x9tYwnJmWjo
 Replace [new_filename] with the name of the encrypted file you want to decrypt.
 Replace [original_filename] with the name you want for the decrypted file.
 
-### Summary
-You have successfully set up the AES-RSA Armor repository, created aliases for easy access to your scripts, and learned how to encrypt and decrypt files using the provided scripts.
+<div style="border-top: 1px solid #000; margin: 10px 0;"></div>
 
-If you encounter any issues, refer to the README in the cloned repository for further details or check the issues tab on GitHub for community support.
+<h3>Summary</h3>
+<p>You have successfully set up the AES-RSA Armor repository, created aliases for easy access to your scripts, and learned how to encrypt and decrypt files using the provided scripts.</p>
 
-#### Happy coding!
+If you encounter any issues, refer to the README in the cloned repository for further details or check the issues tab on GitHub for community support.</p>
+
+### Support Me
+
+If you appreciate my work, consider buying me a coffee! ☕️
+
+<a href="https://buymeacoffee.com/forgecode" target="_blank" style="text-decoration: none; font-size: 24px; font-weight: bold; background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff); background-size: 400%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: rainbow 3s linear infinite;">
+    Buy Me a Coffee
+</a>
+
