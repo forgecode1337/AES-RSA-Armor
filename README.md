@@ -69,17 +69,17 @@ Base64-encoded Encrypted AES Key: No/mFV0csQgN2f8x9tYwnJmWjowRsUrfk/y0AcxHG4xen6
 ```
 ### <b>Using the Scripts</b>
 #### <b>Encrypt a File</b>
-To encrypt a file, use the <code>aes_script</code> with the Base64-encoded AES Key and Encrypted AES Key you generated:
+To encrypt a file, use the <code>aes_script</code> with the Base64-encoded AES Key a you generated:
 ```
-aes_script encrypt [original_filename] [new_filename] --key g51P3EgtoqqFfOAZBYfJgEQUufpRfKJ6+Cw9k2Ytzm8= --delete
+aes_script encrypt [original_filename] [new_filename] --key [Base64-encoded AES Key] --delete
 ```
 <li>Replace <code>[original_filename]</code> with the path to the file you want to encrypt.</li>
 <li>Replace <code>[new_filename]</code> with the desired name for the encrypted file.</li>
 
 #### <b>Decrypt a File</b>
-To decrypt the file you just encrypted, use:
+To decrypt the file you just encrypted, use the Base64-encoded Encrypted AES Key, which is the AES key encrypted with RSA:
 ```
-aes_script decrypt [new_filename] [original_filename] No/mFV0csQgN2f8x9tYwnJmWjowRsUrfk/y0AcxHG4xen6My5O1/51ZZseOhYfhu5Au4SlLKx4T99rCvJrndq009CNwjITjcE9vha9DCrdgwLpJOU5HLj+lRKrhF6/uWAWLJ56LIwQ5Oq1L2DlAHbANVs6Vb2qj84F828pqNHu7AJdIHEwvkhfhPKBEP6HDezD94DrZazqy+UBujJ2mral2Bqld4KvFGNgWwiKDc/FiPjWoEq+Yv48GXPMP5OoofQycT9wEAvCtBfwhlVM+NlXegpsxuihSaBCB3k5Vcth0GD8lf9kazVnvYTxbeD19kAzZ7c/n70XkVnLrL3n/QUg== private.pem --delete
+aes_script decrypt [new_filename] [original_filename] [Base64-encoded Encrypted AES Key] == private.pem --delete
 ```
 <li>Replace <code>[new_filename]</code> with the name of the encrypted file you want to decrypt.</li>
 <li>Replace <code>[original_filename]</code> with the name you want for the decrypted file.</li>
@@ -98,4 +98,3 @@ If you appreciate my work, consider buying me a coffee! ☕️
 <a href="https://buymeacoffee.com/forgecode" target="_blank" style="text-decoration: none; font-size: 24px; font-weight: bold; background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff); background-size: 400%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: rainbow 3s linear infinite;">
     ⭐⭐⭐ Buy Me a Coffee ⭐⭐⭐
 </a>
-
