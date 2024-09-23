@@ -27,7 +27,7 @@ def main():
     cipher_rsa = PKCS1_OAEP.new(public_key)
     encrypted_aes_key = cipher_rsa.encrypt(aes_key)
     encoded_encrypted_aes_key = base64.b64encode(encrypted_aes_key).decode('utf-8')
-    print(f"Base64-encoded Encrypted AES Key: {encoded_encrypted_aes_key}")
+    print(f"Base64-encoded AES Key (encrypted with RSA): {encoded_encrypted_aes_key}")
 
 if __name__ == "__main__":
     main()
