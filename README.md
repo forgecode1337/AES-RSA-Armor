@@ -56,7 +56,6 @@ For Zsh:
 ```
 source ~/.zshrc
 ```
-```
 ### <b>Generate Keys</b>
 Run the key generation script:
 ```
