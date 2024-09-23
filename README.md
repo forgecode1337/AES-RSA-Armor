@@ -57,9 +57,6 @@ For Zsh:
 source ~/.zshrc
 ```
 ```
-sudo apt update
-sudo apt upgrade -y
-```
 ### <b>Generate Keys</b>
 Run the key generation script:
 ```
