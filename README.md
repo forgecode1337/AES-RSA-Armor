@@ -36,7 +36,7 @@ sudo nano ~/.zshrc
 ```
 <b>Add the Aliases:</b> Scroll to the end of the file and add the following lines. Replace <code>usr</code> in <code>/home/usr/AES-RSA-Armor</code> with your actual home directory path:
 ```
-alias aes_script='python3 /home/usr/AES-RSA-Armonr/aes_script.py'
+alias aes_script='python3 /home/usr/AES-RSA-Armor/aes_script.py'
 alias key_script='python3 /home/usr/AES-RSA-Armor/key_script.py'
 ```
 ## <b>Save and Exit</b>
