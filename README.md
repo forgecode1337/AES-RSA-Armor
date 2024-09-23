@@ -79,7 +79,7 @@ aes_script encrypt [original_filename] [new_filename] --key [Base64-encoded AES 
 #### <b>Decrypt a File</b>
 To decrypt the file you just encrypted, use the Base64-encoded Encrypted AES Key, which is the AES key encrypted with RSA:
 ```
-aes_script decrypt [new_filename] [original_filename] [Base64-encoded Encrypted AES Key] == private.pem --delete
+aes_script decrypt [new_filename] [original_filename] [Base64-encoded Encrypted AES Key] private.pem --delete
 ```
 <li>Replace <code>[new_filename]</code> with the name of the encrypted file you want to decrypt.</li>
 <li>Replace <code>[original_filename]</code> with the name you want for the decrypted file.</li>
